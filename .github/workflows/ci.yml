@@ -1,0 +1,12 @@
+name: CI Check
+
+on:
+  push:
+      branches: [ main ]
+
+jobs:
+  hello:
+    run-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "CI is working!"
